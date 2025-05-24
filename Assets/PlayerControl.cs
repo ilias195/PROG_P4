@@ -4,44 +4,46 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-  Rigidbody rb;
-    float Movespeed;
-    float JumpForce;
-    [SerializeField] private bool IsOnFloor =false;
+    // Referentie naar Rigidbody
+    // Snelheid van bewegen moveSpeed type float
+    // Kracht van sprong jumpForce type float
+    Rigidbody rb;
+    public float moveSpeed = 5f;
+    public float jumpForce = 5f;
+    Vector3 jump;
+    [SerializeField] private bool isOnFloor = false;
+
     void Start()
     {
+        // Haal Rigidbody component op van het gameobject
         rb = GetComponent<Rigidbody>();
         Debug.Log("Speler klaar!");
+        jump = new Vector3(0.0f, 1.0f, 0.0f); 
     }
-
 
     void Update()
     {
+        // Beweging met pijltjestoetsen
+        // Beweeg blokje naar links en rechts met de pijltjestoetsen
+
+        // Simpele Sprong met spatie , gebruik rigidbody
 
         float input = Input.GetAxis("Horizontal");
-        transform.position += Vector3.right * input * Time.deltaTime;
+        transform.position += Vector3.right * input * moveSpeed * Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsOnFloor)
+        if (Input.GetKeyDown(KeyCode.Space) && isOnFloor)
         {
-
-            rb.AddForce(Vector3(3f, 2f, 2f) *ForceMode.Impulse);
-            
-
-            IsOnFloor = false;
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            isOnFloor = false;
+            Debug.Log("Springt");
         }
-
-    {
-            void OnCollisionEnter(Collision collision)
-            {
-                if (collision.collider.CompareTag("Floor")) ;
-                IsOnFloor=true;
-            }
     }
-    // Beweging met pijltjestoetsen
-    // Beweeg blokje naar links en rechts met de pijltjestoetsen
 
-    // Simpele Sprong met spatie , gebruik rigidbody
-
-
-}
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Floor"))
+        {   
+            isOnFloor = true;
+        }
+    }
 }
