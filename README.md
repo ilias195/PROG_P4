@@ -15,5 +15,6 @@ In deze gif kun je zien hoe de cube met de keys (A,D) van links naar rechts bewe
 ![Coins+opakken met tijd](https://github.com/user-attachments/assets/50251057-1693-4bf9-906e-6e347105af41)
 
 In deze gif kun je zien hoe de Cube  de Coins in bepaalde tijd oppakt met als doel om alle Coins binnen tijd op te pakken 
+
 [link](Assets/Scripts/GameManger)
 
