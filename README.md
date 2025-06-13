@@ -18,3 +18,8 @@ In deze gif kun je zien hoe de Cube  de Coins in bepaalde tijd oppakt met als do
 
 [link](Assets/Scripts/GameManger)
 
+## Les 4 Start en Speel
+![StartGame+RandomCoins](https://github.com/user-attachments/assets/58a547a0-a041-4207-808e-b1992ab7a37f)
+
+In deze gif kan je zien op de begin pagina dat de speler op de Space bar moet klikken voordat de game begint en vervolgens kan de speler de game gaan spelem.
+
