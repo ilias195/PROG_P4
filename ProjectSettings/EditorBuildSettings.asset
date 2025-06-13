@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+  - enabled: 0
+    path: Assets/Scenes/Muntenjacht.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/SceneSwitcher-Opdr4.unity
+    guid: 66cecc00cf39af34db283fe2dc06d501
+  - enabled: 1
+    path: Assets/Scenes/Coins-Opdr4.unity
+    guid: 2dcf4e4b05060ff42bee02c53c18ded9
   m_configObjects: {}
