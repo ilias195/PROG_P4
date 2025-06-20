@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
-    void Update()                      //Zorg dat de code elk frame wordt uitgevoerd
+    void Update()  //Zorg dat de code elk frame wordt uitgevoerd
     {
         if (Input.GetKeyDown(KeyCode.Space))     //Check of de speler de spatie indrukt
         {

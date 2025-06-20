@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 4; i++);
+        for (int i = 0; i < 4; i++)
         {
             Debug.Log("start");
         }
