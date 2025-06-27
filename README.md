@@ -45,5 +45,11 @@ In deze gif kun je zien de speler de coin probeert op te pakken, maar er zit gee
 [link](Assets/Scripts/ScoreManger)
 
 
+## Les 6 Volger 
+![Lesopdracht6-Volger](https://github.com/user-attachments/assets/1fd0a08e-c46b-480e-82b1-317ec9f248fe)
 
+In deze Gifje kun je zien dat de volger de speler volgt als de speler beweegt.
+
+[link](Assets/Scripts/FallowAndReturn)
+[link](Assets/Scripts/Les6PlayerMove)
 
